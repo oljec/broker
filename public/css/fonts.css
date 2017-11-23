@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "WorkSans";
+    src: url("../fonts/WorkSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Poiret";
+    src: url("../fonts/Poiret_One.ttf") format("truetype");
+}
+@font-face {
+    font-family: "SegoeSemi";
+    src: url("../fonts/SegoeSemilight.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?q2h1hc');
+    src:  url('../fonts/icomoon.eot?q2h1hc#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?q2h1hc') format('truetype'),
+    url('../fonts/icomoon.woff?q2h1hc') format('woff'),
+    url('../fonts/icomoon.svg?q2h1hc#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

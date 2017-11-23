@@ -1,0 +1,1042 @@
+$cont-width: 1120px
+$item-size: 275px
+
+$color-blue: #0C76A5
+$color-pink: #f5e2dc
+$color-gray: #5a5757
+
+*
+  font-family: "SegoeSemi", sans-serif
+  user-select: none
+
+.body
+  background: #ffffff
+  color: #2d2d2d
+
+.wrapper
+  position: relative
+  width: 100%
+  min-height: 100vh
+  min-width: $cont-width
+
+  &_grey
+    background-color: #fcfcfc
+
+h1
+  font-size: 0
+
+h2
+  &.main-title
+    text-align: center
+    margin: 0 auto
+    font-size: 30px
+    text-transform: uppercase
+
+    &:after
+      content: ""
+      display: block
+      width: 150px
+      margin: 6px auto 30px
+      border-top: 3px solid #2d2d2d
+    &_white
+      color: #f3f3f3
+      &:after
+        border-top: 3px solid #f3f3f3
+    &_pink
+      color: $color-pink
+      &:after
+        border-top: 3px solid $color-pink
+
+  &.service-title
+    font-size: 30px
+    margin-bottom: 10px
+    text-transform: uppercase
+    color: $color-gray
+
+  &.documents-title
+    width: 100%
+    font-size: 30px
+    margin-bottom: 20px
+    text-transform: uppercase
+    color: $color-gray
+
+  &.page404-title
+    width: 100%
+    font-size: 30px
+    margin-bottom: 20px
+    text-transform: uppercase
+    color: $color-gray
+
+  &.news-title
+    width: 76%
+    float: left
+    font-size: 28px
+    line-height: 30px
+    margin: 0 1% 20px
+
+  &.allNews-title
+    width: 76%
+    float: left
+    text-align: left
+    font-size: 22px
+    line-height: 25px
+    margin: 0 1% 20px
+
+h3
+  margin-bottom: 10px
+  font-size: 22px
+  color: #0C76A5
+  text-align: center
+
+.icon
+  font-family: "icomoon", sans-serif
+  font-size: 18px
+
+  &_sky-blue
+    color: #4ca2ee
+  &_green
+    color: #0aae1f
+
+  &__phone:before
+    content: "\e942"
+    vertical-align: middle
+  &__mail:before
+    content: "\ea84"
+    vertical-align: middle
+  &__skype:before
+    content: "\eac5"
+    vertical-align: middle
+  &__site:before
+    content: "\e9ca"
+    vertical-align: middle
+  &__facebook:before
+    content: "\ea91"
+    vertical-align: middle
+  &__insta:before
+    content: "\ea92"
+    vertical-align: middle
+  &__youtube:before
+    content: "\ea9d"
+    vertical-align: middle
+
+// ******************** main-menu
+.header
+  position: fixed
+  z-index: 999
+  height: 70px
+  min-width: $cont-width
+  width: 100%
+  background-color: whitesmoke
+
+  &__container
+    width: 100vw
+    max-width: $cont-width
+    margin: 0 auto
+    &:after
+      display: block
+      height: 0
+      content: ""
+      clear: both
+
+  &__logo
+    width: 200px
+    height: 70px
+    float: left
+    &:hover
+      opacity: 0.9
+
+.main-nav
+  float: right
+
+  &__item
+    display: inline
+    line-height: 70px
+    vertical-align: middle
+  &__link
+    display: inline-block
+    //font-family: "Lato", sans-serif
+    font-size: 18px
+    color: black
+    padding: 0 25px
+
+    &:hover
+      background-color: white
+    &_active
+      background-color: white
+
+// ******************* drop-menu
+.drop-menu
+  position: absolute
+  top: 70px
+  left: 0
+  height: 0
+  width: 100%
+  background: white
+  overflow: hidden
+  line-height: 16px
+  box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.2)
+  transition: all 0.3s ease-in
+
+  &[data-tab="Services"]
+    //height: 241px
+
+  &__container
+    width: $cont-width
+    margin: 0 auto
+    padding: 25px 0 15px
+
+    &:after
+      display: block
+      height: 0
+      content: ""
+      clear: both
+
+  &__img
+    display: block
+    float: left
+    width: 180px
+    height: 180px
+    margin: 0px 20px
+    padding: 3px
+    border: 1px solid #676767
+
+  &__content
+    float: left
+    width: 34%
+    height: 100%
+    margin: 0 20px
+
+    &_wide
+      width: 60%
+
+  &__text
+    text-align: justify
+    line-height: 20px
+    font-size: 16px
+
+    &_wide
+      margin-top: 20px
+      line-height: 25px
+      text-align: center
+      vertical-align: middle
+
+    &-line
+      &_bottom
+        margin-top: 30px
+      &_contacts
+        user-select: text
+
+    &-link
+      padding: 10px
+      margin-top: 30px
+      border-radius: 5px
+      color: #0C76A5
+      font-size: 16px
+
+      &:hover
+        background-color: #ebebeb
+        color: dodgerblue
+
+  &__list
+    float: left
+    margin-left: 5%
+    width: 35%
+    height: 100%
+
+  &__list-item
+    line-height: 30px
+    vertical-align: middle
+    list-style-type: none
+
+    &_last
+      margin-top: 15px
+      text-decoration: underline
+
+  &__list-link
+    padding: 10px
+    border-radius: 5px
+    color: #0C76A5
+    font-size: 16px
+
+    &:hover
+      background-color: #ebebeb
+      color: dodgerblue
+
+//  ******************* content
+.content
+  padding: 70px 0 50px
+
+.intro
+  height: 350px
+  min-width: $cont-width
+  background: url('~/img/header_bg.jpg') no-repeat #07111D top center
+
+  &__mask
+    height: 350px
+    width: 100%
+
+  &__container
+    position: relative
+    width: $cont-width
+    margin: 0 auto
+
+  &__text
+    position: absolute
+    width: 450px
+    margin: 0 auto
+    padding: 35px 15px 20px 15px
+    text-align: center
+    font-size: 27px
+    line-height: 26px
+    color: $color-pink
+
+    &_top
+      top: 25px
+      left: 10px
+      text-align: left
+      background: url('~/img/border-intro.png') no-repeat top left
+      background-size: 200px 110px
+
+    &_bottom
+      top: 195px
+      left: -153px
+      padding-bottom: 20px
+      text-align: right
+      background: url('~/img/border-intro_bottom.png') no-repeat bottom right
+      background-size: 200px 110px
+
+.main-title
+  &__text
+    text-align: center
+    margin: 0 auto 6px
+    font-size: 30px
+    text-transform: uppercase
+
+  &__separator
+    width: 150px
+    margin: 0 auto 30px
+    border-top: 3px solid #2d2d2d
+
+.about-us
+  min-width: $cont-width
+  padding-top: 35px
+
+  &__container
+    width: $cont-width
+    margin: 0 auto
+
+  &__text
+    padding: 0 20px 15px
+
+    &:after
+      display: block
+      height: 0
+      content: ""
+      clear: both
+
+  &__paragr
+    margin-bottom: 20px
+    font-size: 17px
+
+.about-item
+  float: left
+  width: 30%
+  height: 265px
+  margin: 0 1.5% 20px
+
+  &__img
+    display: block
+    width: 100%
+
+    &-container
+      float: left
+      width: 20%
+      height: 100%
+
+
+  &__title
+    float: right
+    width: 75%
+    margin-bottom: 20px
+    font-size: 20px
+    text-align: center
+    font-weight: 600
+    text-transform: uppercase
+
+  &__text
+    float: right
+    width: 75%
+    text-align: justify
+    font-size: 14px
+
+//  ***************************** news section
+.news
+  min-width: $cont-width
+  height: 50px
+  background-color: #ffffff
+
+  &__container
+    width: $cont-width - 50px
+    margin: 0 auto
+
+    &:after
+      display: block
+      height: 0
+      content: ""
+      clear: both
+
+  &__img
+    float: left
+    width: 60px
+    height: 55px
+
+    &:hover
+      opacity: 0.9
+
+  &__text
+    float: left
+    margin-left: 15px
+    padding-top: 10px
+
+  &__link
+    color: black
+    font-size: 20px
+
+    &:hover
+      text-decoration: underline
+
+//  ***************************** services section
+.services
+  min-width: $cont-width
+
+  &__header
+    width: 100%
+    padding: 25px 0 1px
+    background: url('~/img/services_bg.jpg') no-repeat #ffe35f top center
+    background-size: 100% 100%
+
+  &__container
+    width: $cont-width
+    margin: 0 auto
+    padding: 10px 0 30px
+
+    &:after
+      display: block
+      height: 0
+      content: ""
+      clear: both
+
+  &__item
+    position: relative
+    float: left
+    width: $item-size
+    height: $item-size - 20px
+    margin: 2px
+
+  &__item-img
+    position: absolute
+    z-index: 1
+    width: 100%
+    height: 100%
+
+  &__item-title
+    position: absolute
+    z-index: 2
+    display: flex
+    justify-content: center
+    align-items: center
+    width: $item-size - 20px
+    height: $item-size - 20px
+    padding: 0 10px
+    font-size: 32px
+    line-height: 45px
+    text-shadow: 2px 2px 3px black
+    color: white
+    text-align: center
+
+.curtain
+  position: absolute
+  z-index: 10
+  width: 0
+  height: 100%
+  background-color: rgba(255, 255, 255, 0.9)
+  overflow: hidden
+  transition: all 0.3s ease-in
+
+  &__text
+    display: flex
+    justify-content: center
+    align-items: center
+    width: $item-size
+    height: $item-size - 20px
+    text-align: center
+    color: black
+    font-size: 18px
+
+//  ********************** ask-question section
+.ask-question
+  min-width: $cont-width
+  height: 432px
+  background: url('~/img/question-ask_bg.jpg') no-repeat #030713 bottom center
+
+  &__container
+    width: $cont-width
+    height: 100%
+    margin: 0 auto
+
+    &:after
+      display: block
+      height: 0
+      content: ""
+      clear: both
+
+  &__content
+    float: right
+    width: 400px
+    padding: 100px 100px 0 50px
+    color: $color-pink
+
+  &__text
+    margin-bottom: 30px
+    font-size: 18px
+    text-align: center
+
+  &__button
+    width: 150px
+    height: 50px
+    margin: 0 auto
+    cursor: pointer
+    font-size: 16px
+    font-weight: 600
+    text-transform: uppercase
+    text-align: center
+    line-height: 50px
+    vertical-align: middle
+    background-color: #ffeb52
+    color: #5a5757
+    transition: all .2s ease-in
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2)
+
+    &:hover
+      background-color: #f9e551
+      box-shadow: none
+
+  &__img
+    float: left
+    width: 550px
+
+.form-question
+  position: fixed
+  z-index: 1000
+  bottom: 0
+  left: 0
+  height: 100%
+  width: 100%
+  min-width: $cont-width
+  visibility: hidden
+  background-color: rgba(0,0,0,0.2)
+
+  &__content
+    position: absolute
+    bottom: 0
+    width: 100%
+    height: 0
+    overflow: hidden
+    background: url('~/img/ask-question_form-bg.png') no-repeat #000000 top center
+    transition: height 0.5s ease-in
+
+  &__container
+    width: $cont-width - 100px
+    margin: 0 auto
+    padding: 25px 50px
+
+.forms
+  width: 100%
+  height: 100%
+  margin: 0 auto
+
+  &__row
+    text-align: center
+    margin-bottom: 12px
+
+    &:after
+      display: block
+      height: 0
+      content: ""
+      clear: both
+
+  &__column
+    width: 50%
+    float: left
+    text-align: center
+
+  &__input
+    width: 70%
+    height: 22px
+    padding: 5px 15px
+    font-size: 18px
+    margin: 0 15% 10px
+    border-radius: 8px
+    color: #544d4d
+
+    &_low-right
+      float: right
+      width: 60%
+      margin: 0 0
+
+    &-row
+      line-height: 32px
+      vertical-align: center
+      margin-bottom: 8px
+      &:after
+        display: block
+        height: 0
+        content: ""
+        clear: both
+    &-span
+      display: block
+      float: left
+      font-weight: 600
+      color: #544d4d
+
+  &__text-area
+    width: 90%
+    padding: 10px 15px
+    font-size: 18px
+    border-radius: 8px
+    color: #544d4d
+    resize: none
+
+    &_low-right
+      float: right
+      width: 60%
+      margin: 0 0
+
+  &__select
+    width: 70%
+    height: 35px
+    padding: 0px 15px
+    font-size: 18px
+    margin: 0 15% 10px
+    border-radius: 8px
+    color: #544d4d
+
+    &_low-right
+      float: right
+      width: 66%
+      margin: 0 0
+
+  &__submit
+    font-size: 18px
+    font-weight: 700
+    padding: 10px 40px
+    border-radius: 3px
+    color: #fff
+    border-color: #fed136
+    background-color: #fed136
+    text-transform: uppercase
+    cursor: pointer
+
+    &:hover
+      background-color: #fec503
+
+  &__info
+    color: #f3f3f3
+    font-weight: 600
+
+    &_black
+      color: #544d4d
+
+// ************************ footer
+.footer
+  position: absolute
+  bottom: 0
+  width: 100%
+  min-width: $cont-width
+  background-color: #000200
+
+  &__container
+    width: $cont-width
+    margin: 0 auto
+    font-size: 14px
+    color: white
+    line-height: 50px
+    vertical-align: middle
+    text-align: center
+
+
+
+// ************************** service page
+.full-content
+  width: $cont-width
+  margin: 0 auto
+
+  &:after
+    display: block
+    height: 0
+    content: ""
+    clear: both
+
+.sidebar
+  float: left
+  margin-top: 30px
+  padding: 20px 10px
+  background-color: #ffffff
+  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2)
+
+.services-menu
+  &__item
+    width: 300px
+    list-style-type: none
+  &__link
+    display: block
+    padding: 10px
+    border-radius: 5px
+    color: #0C76A5
+    font-size: 16px
+    &:hover
+      background-color: #ebebeb
+      color: dodgerblue
+    &_active
+      background-color: #ebebeb
+      color: dodgerblue
+
+.service-container
+  float: left
+  width: $cont-width - 300px - 20px - 50px
+  padding: 30px 25px
+  text-align: center
+
+  &__img
+    width: 600px
+    height: 300px
+    padding: 5px
+    background-color: #e1e1e1
+    border: 1px solid #b4b4b4
+    margin-bottom: 20px
+
+  &__button
+    width: 150px
+    height: 50px
+    margin: 0 auto
+    cursor: pointer
+    font-size: 16px
+    font-weight: 600
+    text-transform: uppercase
+    text-align: center
+    line-height: 50px
+    vertical-align: middle
+    background-color: #ffeb52
+    color: #5a5757
+    transition: all .2s ease-in
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2)
+
+    &:hover
+      background-color: #f9e551
+      box-shadow: none
+
+.service-text
+  color: #242121
+  text-align: justify
+  text-indent: 20px
+  font-size: 17px
+  margin-bottom: 25px
+  line-height: 1.4
+
+  & li
+    text-indent: 0
+    padding-left: 20px
+
+  & p
+    margin: 6px
+
+  &__img-line
+    min-height: 50px
+    margin-bottom: 15px
+    text-indent: 0
+
+    & p
+      padding-left: 90px
+
+    & img
+      float: left
+      width: 50px
+      height: 50px
+      margin: 0 20px 0 -70px
+
+  &__price-line
+    min-height: 50px
+    margin-bottom: 15px
+    text-indent: 0
+
+    & p
+      padding-left: 435px
+
+    & img
+      float: left
+      width: 200px
+      margin-left: -410px
+
+  &__price-table
+    text-indent: 0
+
+    & th
+      padding: 5px 10px
+
+      &:nth-child(1)
+        width: 8%
+
+      &:nth-child(2)
+        width: 80%
+
+      &:nth-child(3)
+        width: 12%
+
+    & td
+      padding: 5px 10px
+
+.form-service
+  position: fixed
+  z-index: 1000
+  bottom: 0
+  left: 0
+  height: 100%
+  width: 100vw
+  visibility: hidden
+  background-color: rgba(0,0,0,0.2)
+
+  &__content
+    margin: 50px auto 0
+    width: 540px
+    overflow: hidden
+    background-color: white
+    transition: height 0.5s ease-in
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2)
+
+  &__container
+    width: 500px
+    margin: 0 auto
+    padding: 25px 20px
+
+// ************************** news page
+.allNews-container
+  float: left
+  width: $cont-width - 300px - 20px - 50px
+  padding: 30px 25px
+  text-align: center
+
+
+.allNews
+  margin: 10px 0 15px 0
+
+  &:after
+    display: block
+    height: 0
+    content: ""
+    clear: both
+
+  &__date
+    float: left
+    width: 16%
+    margin-left: 2%
+    padding-top: 10px
+    height: 50px
+
+  &__img
+    display: block
+    float: left
+    width: 250px
+    padding: 5px
+    margin-right: 20px
+    background-color: #e1e1e1
+    border: 1px solid #b4b4b4
+    margin-bottom: 20px
+
+    &_right
+      float: right
+      margin: 0 0 0 20px
+
+  &__link
+    color: #2b2b2b
+
+    &:hover
+      color: #585858
+      text-decoration: underline
+
+    &_bottom
+      padding: 5px 10px
+      background-color: lightgrey
+      color: black
+      border-radius: 5px
+      transition: all 0.2s ease-in
+
+      &:hover
+        background-color: #ebebeb
+
+    &-container
+      float: left
+      width: 100%
+      margin-top: 20px
+      text-align: right
+
+      &_left
+        text-align: left
+
+  &__text
+    width: 60%
+    float: left
+    color: #242121
+    text-align: justify
+    font-size: 17px
+    line-height: 1.4
+
+    & li
+      text-indent: 0
+      padding-left: 20px
+
+    & p
+      margin: 6px
+
+
+// ************************** document page
+.documents-container
+  padding: 30px 25px 0
+  text-align: center
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+
+  &:after
+    display: block
+    height: 0
+    content: ""
+    clear: both
+
+.all-doc
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+
+.document
+  width: 32%
+  margin: 5px
+
+  &__container
+    height: 410px
+    margin: 0 13px 20px 13px
+    border: 1px solid black
+    background-color: #f7f7f7
+    box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.6)
+    transition: all 0.1s ease-in
+
+    &:hover
+      margin: 6px 7px 14px 19px
+      background-color: #eaeaea
+      box-shadow: none
+
+  &__title
+    height: 50px
+    padding: 10px
+    font-size: 20px
+    font-weight: 600
+    color: $color-blue
+
+  &__img
+    display: block
+    height: 70%
+    max-width: 95%
+    margin: 5px auto 15px
+    cursor: pointer
+
+  &__link
+    padding: 10px
+    border-radius: 5px
+    color: $color-blue
+    text-decoration: underline
+    font-size: 16px
+
+    &:hover
+      background-color: #d5d5d5
+      color: dodgerblue
+      text-decoration: none
+
+  &__mask
+    position: fixed
+    z-index: 1000
+    bottom: 0
+    left: 0
+    height: 100%
+    width: 100vw
+    min-width: 100vw
+    visibility: hidden
+    background-color: rgba(0,0,0,0.2)
+
+  &__full-img
+    height: 96vh
+    margin-top: 2vh
+
+//  ******************** page404
+.page404-container
+  padding: 30px 25px 0
+  text-align: center
+
+  &:after
+    display: block
+    height: 0
+    content: ""
+    clear: both
+
+
+//  ******************** pagination
+.custom-pagination
+  margin-top: 20px
+  text-align: center
+
+.pagination
+  display: inline-block
+  list-style-type: none
+  & li
+    display: inline
+    float: left
+    box-sizing: border-box
+
+  & a,  span
+    color: black
+    float: left
+    padding: 6px 12px
+    background-color: #fff
+    font-weight: 600
+    line-height: 1.428571429
+    text-decoration: none
+    transition: background-color .3s
+    border: 1px solid #ddd
+
+  & a
+    color: #428bca
+
+  & li.active span
+    background-color: #428bca
+    color: white
+
+  & a:hover:not(.active)
+    background-color: #ddd
+
+@media screen and (max-width: 1120px)
+  .header
+    &__container
+      margin: 0
+
+  .drop-menu
+    &__container
+      width: 100vw
+      margin: 0
+
+    &__list
+      float: left
+      margin-left: 0
+
+@media screen and (max-width: 880px)
+  .drop-menu
+    &__content
+      width: 30%
+      margin: 0

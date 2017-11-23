@@ -1,0 +1,1 @@
+<script src="/libs/ckeditor/ckeditor.js"></script>

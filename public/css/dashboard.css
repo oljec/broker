@@ -1,0 +1,104 @@
+* {
+  font-size: 18px;
+}
+
+.content {
+  background-color: #fafafa;
+  padding: 10px;
+}
+
+.content__container {
+  width: 90%;
+  padding-left: 20px;
+}
+
+h4.green {
+  color: green;
+}
+
+h4.red {
+  color: darkred;
+}
+
+span.green {
+  color: green;
+}
+
+span.red {
+  color: darkred;
+}
+
+.CPanel-menu__item {
+  width: 100%;
+}
+
+.CPanel-menu__link {
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  color: #0C76A5;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #fafafa;
+  border: 1px black solid;
+}
+
+.CPanel-menu__link:hover {
+  background-color: #ebebeb;
+  color: dodgerblue;
+}
+
+.CPanel-menu__link_active {
+  background-color: #ebebeb;
+  color: dodgerblue;
+}
+
+.login__container {
+  float: none;
+  margin: 20px auto;
+  padding-bottom: 20px;
+  border: 1px solid black;
+  background-color: #fafafa;
+  -webkit-box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.6);
+          box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.6);
+}
+
+.badge-danger {
+  background-color: #d9534f;
+}
+
+.img-preview {
+  width: 80%;
+}
+
+.img-loader:after {
+  display: block;
+  height: 0;
+  content: "";
+  clear: both;
+}
+
+.img-container {
+  float: left;
+  width: 40%;
+}
+
+.file-container {
+  float: left;
+  width: 60%;
+}
+
+.iconBtn {
+  background: none;
+  border: none;
+  opacity: 1;
+}
+
+.iconBtn:hover {
+  opacity: 0.8;
+}
+
+.iconBtn span {
+  font-size: 20px;
+}
+
